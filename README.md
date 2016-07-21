@@ -1,6 +1,6 @@
-# Automatic FOrensics Tool
+# Automation FOrensics Tool
 
-The Automatic FOrensics Tool (AFOT) is an automation tool build in Python and used for Windows Forensics in order to combine the following tools:
+The Automation FOrensics Tool (AFOT) is an automation tool build in Python and used for Windows Forensics in order to combine the following tools:
 - AnalyzePESig (http://didierstevens.com/files/software/AnalyzePESig_V0_0_0_2.zip)
 - National Software Reference Library reduced set (http://www.nsrl.nist.gov/RDS/rds_2.52/rds_252m.zip)
 - NSRL Tool (http://didierstevens.com/files/software/nsrl_V0_0_2.zip)
