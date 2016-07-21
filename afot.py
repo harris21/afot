@@ -252,6 +252,16 @@ def main():
 
         time.sleep(2)
 
+        print colored('Cleaning up unnecessary files...', 'yellow')
+
+        # Delete unnecessary files
+        deleteFile('windows.csv')
+        deleteFile('hashes.txt')
+        deleteFile('nist.csv')
+        deleteFile('infected.txt')
+
+        time.sleep(2)
+
         print colored('\nreport.csv', 'green') + colored(' file has been created containing a full report!', 'yellow')
 
         sys.exit(1)
