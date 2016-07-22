@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>AFoT by harris21</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>AFoT</h1>
+        <h2>Automation Forensics Tool for Windows</h2>
+        <a href="https://github.com/harris21/afot" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="automation-forensics-tool" class="anchor" href="#automation-forensics-tool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Automation FOrensics Tool</h1>
+
+<p>The Automation FOrensics Tool (AFOT) is an automation tool build in Python and used for Windows Forensics in order to combine the following tools:</p>
+
+<ul>
+<li>AnalyzePESig (<a href="http://didierstevens.com/files/software/AnalyzePESig_V0_0_0_2.zip">http://didierstevens.com/files/software/AnalyzePESig_V0_0_0_2.zip</a>)</li>
+<li>National Software Reference Library reduced set (<a href="http://www.nsrl.nist.gov/RDS/rds_2.52/rds_252m.zip">http://www.nsrl.nist.gov/RDS/rds_2.52/rds_252m.zip</a>)</li>
+<li>NSRL Tool (<a href="http://didierstevens.com/files/software/nsrl_V0_0_2.zip">http://didierstevens.com/files/software/nsrl_V0_0_2.zip</a>)</li>
+<li>VirusTotal Search Tool (<a href="http://didierstevens.com/files/software/virustotal-search_V0_1_2.zip">http://didierstevens.com/files/software/virustotal-search_V0_1_2.zip</a>)</li>
+</ul>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>The script makes use of Python version 2.7, but it will most likely work with Python 3.
+You will need to have <strong>PIP</strong> installed in your system. Please see <a href="https://pip.pypa.io/en/stable/installing/">python docs</a> for details.</p>
+
+<p>You should have your own a VirusTotal api key. Just create an account in VirusTotal website and grab the api key. Then add it as the <code>__VIRUSTOTALAPIKEY__</code> value.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Just run <code>python afot.py</code> in your terminal.</p>
+
+<h2>
+<a id="procedure" class="anchor" href="#procedure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Procedure</h2>
+
+<p>So the procedure is pretty straight-forward:</p>
+
+<ul>
+<li>The user provides the path, which will be used to analyze all the executables included in those folders/subfolders.</li>
+<li>
+<strong>AnalyzePESig</strong> looks for signed executables, whom certificate will soon be revoked.</li>
+<li>
+<strong>AFOT</strong> will collect all the non-signed executables and cross-check them with NSRL's hashset database, using the <strong>NSRL</strong> tool.</li>
+<li>Last but not least, if any hashes were found to be in NSRL's hashset database too, we cross-check those hashes with <strong>VirusTotal</strong>, using the VirusTotal Search tool.</li>
+</ul>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Please see <a href="https://github.com/harris21/afot/blob/master/CONTRIBUTING.md">CONTRIBUTING</a> for details.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>The MIT License (MIT). Please see <a href="https://github.com/harris21/afot/blob/master/LICENSE">License File</a> for more information.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/harris21/afot/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/harris21/afot/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/harris21/afot"></a> is maintained by <a href="https://github.com/harris21">harris21</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
